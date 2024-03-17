@@ -8,12 +8,13 @@ curl http://localhost:11434/v1/chat/completions \
     "messages": [
         {
             "role": "system",
-            "content": "You are a helpful assistant."
+            "content": "You are a programming assistant."
         },
         {
             "role": "user",
-            "content": "Hello!"
+            "content": "write me an hello world program in GoLang"
         }
-    ]
-}'
+    ],
+    "stream": false
+}' | jq
 ```
